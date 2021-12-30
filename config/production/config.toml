@@ -1,1 +1,2 @@
-canonifyURLs = false
+baseurl = "https://appservR.github.io/"
+canonifyURLs = true
