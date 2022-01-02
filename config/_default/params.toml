@@ -4,7 +4,7 @@
 title = "AppservR"
 titleSeparator = "-"
 titleAddition = "Deploying R apps the easy way"
-description = "AppservR is an open-source program to deploy R Shiny apps easily on Windows and Linux."
+description = "AppservR is an open-source program to deploy R Shiny apps on Windows and Linux easily."
 
 ## Documentation
 # docsVersion = "0.3"
@@ -50,7 +50,7 @@ lqipWidth = "20x"
 smallLimit = "300"
 
 # Footer
-footer = "Powered by <a href=\"https://gohugo.io/\">Hugo</a> and <a href=\"https://getdoks.org/\">Doks</a>"
+footer = "Powered by <a href=\"https://www.netlify.com/\">Netlify</a>, <a href=\"https://gohugo.io/\">Hugo</a>, and <a href=\"https://getdoks.org/\">Doks</a>"
 
 # Feed
 copyRight = "Copyright (c) 2020-2021 Henk Verlinde"

@@ -1,7 +1,7 @@
 ---
 title: "Quick Start"
-description: "One page summary of how to start a new Doks project."
-lead: "One page summary of how to start a new Doks project."
+description: "A one page tutorial to use AppservR."
+lead: "A one page tutorial to use AppservR."
 date: 2020-11-16T13:59:39+01:00
 lastmod: 2020-11-16T13:59:39+01:00
 draft: false
@@ -15,11 +15,31 @@ toc: true
 
 ## Requirements
 
-Doks uses npm to centralize dependency management, making it [easy to update]({{< relref "how-to-update" >}}) resources, build tooling, plugins, and build scripts:
+AppservR runs your Shiny apps using your system install of R. You need to have R installed on your system to use it. You will also need the ```shiny``` package and all other R package your app needs. [Learn more about Shiny →](https://shiny.rstudio.com/)
 
-- Download and install [Node.js](https://nodejs.org/) (it includes npm) for your platform.
+{{< alert icon="💡" text="Make sure first that you are able to run your Shiny app properly using R/Rstudio." />}}
 
-## Start a new Doks project
+## Download & Install
+
+Get the latest AppservR executable for your platform on our [Github releases page](https://github.com/appservR/appservR/releases). You will need to chose your download option from the "Assets" section of a specific release.
+
+To install, just uncompress the archive at a location of your choice.  
+
+## Run
+
+AppservR is a command-line program with a web graphical user interface. Most settings can be configured using only the web interface, which means that you do not need to have access to the server to configure a new Shiny app, for instance.
+
+Start a terminal window in the directory where AppservR executable lives and then type:
+
+``` bash
+./appservR serve 
+```
+
+Go to [http://localhost:8080](http://localhost:8080). You should see a running sample app (the classic Shiny's *Old Faithful Geyser Data*, with a twist). If not, see below.
+
+## Configure
+
+ AppservR will look for *Rscript* executable at the default install location for your platform. If it is installed 
 
 Create a new site, change directories, install dependencies, and start development server.
 
