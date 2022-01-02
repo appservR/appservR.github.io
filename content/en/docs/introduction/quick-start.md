@@ -39,50 +39,14 @@ Go to [http://localhost:8080](http://localhost:8080). You should see a running s
 
 ## Configure
 
- AppservR will look for *Rscript* executable at the default install location for your platform. If it is installed 
+When you run AppservR for the first time, it will create in the the same directory as the executable file:
 
-Create a new site, change directories, install dependencies, and start development server.
+* A `config.yml` configuration file,
+* A folder with a sample Shiny app,
+* A SQLite database file containing apps and users settings.
 
-### Create a new site
 
-Doks is available as a child theme, and a starter theme:
-
-- Use the Doks child theme, if you do __not__ plan to customize a lot, and/or need future Doks updates.
-- Use the Doks starter theme, if you plan to customize a lot, and/or do __not__ need future Doks updates.
-
-Not quite sure? Use the Doks child theme.
-
-#### Doks child theme
-
-```bash
-git clone https://github.com/h-enk/doks-child-theme.git my-doks-site
-```
-
-#### Doks starter theme
-
-```bash
-git clone https://github.com/h-enk/doks.git my-doks-site
-```
-
-### Change directories
-
-```bash
-cd my-doks-site
-```
-
-### Install dependencies
-
-```bash
-npm install
-```
-
-### Start development server
-
-```bash
-npm run start
-```
-
-Doks will start the Hugo development webserver accessible by default at `http://localhost:1313`. Saved changes will live reload in the browser.
+AppservR will look for *Rscript* executable at the default install location for your platform. If it is installed 
 
 ## Other commands
 
