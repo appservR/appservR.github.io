@@ -1,15 +1,15 @@
 ---
-title: "Commands"
-description: "Doks comes with commands for common tasks."
-lead: "Doks comes with commands for common tasks."
+title: "Install as a service"
+description: "AppservR can be installed as a service to run automatically in the background."
+lead: "AppservR can be installed as a service to run automatically in the background."
 date: 2020-10-13T15:21:01+02:00
 lastmod: 2020-10-13T15:21:01+02:00
 draft: false
 images: []
 menu:
   docs:
-    parent: "prologue"
-weight: 130
+    parent: "recipes"
+weight: 100
 toc: true
 ---
 
