@@ -41,18 +41,22 @@ Go to [http://localhost:8080](http://localhost:8080). You should see a running s
 
 When you run AppservR for the first time, it will create in the the same directory as the executable:
 
-* A `config.yml` configuration file,
-* A `apps` folder containing a sample Shiny app,
-* A SQLite database file holding apps and users settings.
+* a `config.yml` configuration file,
+* an `apps` folder containing a sample Shiny app,
+* a SQLite database file holding apps and users settings.
 
-Some settings require restarting the server to be taken into account and are defined in the `config.yml` file. 
+Settings which require restarting the server to take effect are defined in the `config.yml` file. Other settings can be changed via the web interface.
 
-### "Cold" configuration
+### Configuration file
 
-AppservR will look for *Rscript* executable at the default install location for your platform. If it is installed 
+`config.yml` configuration file is created in the same directory as the executable, and allows setting the port and host to listen on, the location of the Rscript executable, etc. It is populated with default settings which should work for most users.
 
-### "Hot" configuration
+In particular, AppservR will look for the *Rscript* executable at the default install location for your platform. If it is installed elsewhere, you will not see the sample app when navigating to [http://localhost:8080](http://localhost:8080), and you should set the appropriate location in the `config.yml` file.
 
-## Other commands
+### Web interface
 
-Doks comes with commands for common tasks. [Commands →]({{< relref "commands" >}})
+Go to [http://localhost:8080/admin](http://localhost:8080/admin) to access the admin interface. 
+
+You will first need to register as a user via the signup form. The first user to register is automatically given administrative privileges (which is obviously not the case for the subsequent signed up users).
+
+After you have created your admin account and successfully logged in, you can configure existing or new Shiny apps at [http://localhost:8080/admin/apps](http://localhost:8080/admin/apps). Several apps can live on the same server and are accessed using the path you define.
