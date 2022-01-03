@@ -39,14 +39,19 @@ Go to [http://localhost:8080](http://localhost:8080). You should see a running s
 
 ## Configure
 
-When you run AppservR for the first time, it will create in the the same directory as the executable file:
+When you run AppservR for the first time, it will create in the the same directory as the executable:
 
 * A `config.yml` configuration file,
-* A folder with a sample Shiny app,
-* A SQLite database file containing apps and users settings.
+* A `apps` folder containing a sample Shiny app,
+* A SQLite database file holding apps and users settings.
 
+Some settings require restarting the server to be taken into account and are defined in the `config.yml` file. 
+
+### "Cold" configuration
 
 AppservR will look for *Rscript* executable at the default install location for your platform. If it is installed 
+
+### "Hot" configuration
 
 ## Other commands
 
