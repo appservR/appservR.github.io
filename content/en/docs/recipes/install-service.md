@@ -15,7 +15,7 @@ toc: true
 
 ## Manage service via the CLI
 
-The `appservr service` command allows installing and managing the AppservR service.
+The `appservr service` command allows installing and managing the AppservR service on Windows an Linux.
 
 {{< alert icon="💡" text="Managing services requires to run a command prompt as admin on Windows." />}}
 
@@ -36,3 +36,8 @@ On Windows, we recommand that you modify the service in the services configurati
 ### Uninstall
 
 `appservr service remove` will uninstall the service if it is already stopped, or right after it is stopped.
+
+## Run without admin on Windows
+
+Without admin privilege you cannot install AppservR as a service on Windows. However, you can still run it as a scheduled task to run on startup or at session start, which should be a decent alternative.
+
