@@ -13,86 +13,16 @@ weight: 120
 toc: true
 ---
 
-{{< alert icon="💡" text="You can change the commands in the scripts section of `./package.json`." />}}
+## Customize html templates
 
-## create
+All buit-in pages, such as signup, login, error pages, are embeded in AppservR executable. However, they can be changed easily if you need to change the text language, add your company's logo, etc.
 
-Create new content for your site:
+You just need to create a `templates` directory at the same location as the executable. AppservR will look for existing files in this directory before falling back to the default templates. 
 
-```bash
-npm run create [path] [flags]
-```
+Please check out [this folder](https://github.com/appservR/appservR/tree/main/templates) on Github and copy the templates you want to modify in your `templates` folder (keeping the exact same subdirectories and filenames). The template engine is [Go's default template package](https://pkg.go.dev/text/template). Normally, you would just need to modify the html.
 
-See also the Hugo docs: [hugo new](https://gohugo.io/commands/hugo_new/).
+## Add/modify static files
 
-## lint
+In a similar manner as the `templates` folder described above, you can create an `assets` folder at the same location as AppservR executable. Static files will be looked up in this directory, fall back to default files if they do not exist, and return a `404 not found` error if the file is not present neither in your `assets` directory or in the default [`assets`](https://github.com/appservR/appservR/tree/main/assets) folder.
 
-Check scripts, styles, and markdown for errors:
-
-```bash
-npm run lint
-```
-
-### scripts
-
-Check scripts for errors:
-
-```bash
-npm run lint:scripts [-- --fix]
-```
-
-### styles
-
-Check styles for errors:
-
-```bash
-npm run lint:styles [-- --fix]
-```
-
-### markdown
-
-Check markdown for errors:
-
-```bash
-npm run lint:markdown [-- --fix]
-```
-
-## clean
-
-Delete temporary directories:
-
-```bash
-npm run clean
-```
-
-## start
-
-Start local development server:
-
-```bash
-npm run start
-```
-
-## build
-
-Build production website:
-
-```bash
-npm run build
-```
-
-### functions
-
-Build Lambda functions:
-
-```bash
-npm run build:functions
-```
-
-### preview
-
-Build production website including draft and future content:
-
-```bash
-npm run build:preview
-```
+The content of the `assets` folder is served under the `/assets/` url path.
