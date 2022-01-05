@@ -13,86 +13,26 @@ weight: 130
 toc: true
 ---
 
-{{< alert icon="💡" text="You can change the commands in the scripts section of `./package.json`." />}}
+## Manage service via the CLI
 
-## create
+The `appservr service` command allows installing and managing the AppservR service.
 
-Create new content for your site:
+{{< alert icon="💡" text="Managing services requires to run a command prompt as admin on Windows." />}}
 
-```bash
-npm run create [path] [flags]
-```
+### Install
 
-See also the Hugo docs: [hugo new](https://gohugo.io/commands/hugo_new/).
+`appservr service install` sub-command will install appservr as a service (still running the executable at its current location).
 
-## lint
+On Windows, we recommand that you modify the service in the services configuration panel afterwards in order to have it ran by a non-admin account. Otherwise, you allow AppservR admin to run arbitrary scripts as admin, which is a security threat (AppservR uses your system installation of R and is not isolated from your system).
 
-Check scripts, styles, and markdown for errors:
+### Start
 
-```bash
-npm run lint
-```
+`appservr service start` will start the service.
 
-### scripts
+### Stop
 
-Check scripts for errors:
+`appservr service stop` will stop the service.
 
-```bash
-npm run lint:scripts [-- --fix]
-```
+### Uninstall
 
-### styles
-
-Check styles for errors:
-
-```bash
-npm run lint:styles [-- --fix]
-```
-
-### markdown
-
-Check markdown for errors:
-
-```bash
-npm run lint:markdown [-- --fix]
-```
-
-## clean
-
-Delete temporary directories:
-
-```bash
-npm run clean
-```
-
-## start
-
-Start local development server:
-
-```bash
-npm run start
-```
-
-## build
-
-Build production website:
-
-```bash
-npm run build
-```
-
-### functions
-
-Build Lambda functions:
-
-```bash
-npm run build:functions
-```
-
-### preview
-
-Build production website including draft and future content:
-
-```bash
-npm run build:preview
-```
+`appservr service remove` will uninstall the service if it is already stopped, or right after it is stopped.
