@@ -1,6 +1,6 @@
 ---
 title: "Manage user authentication"
-description: "AppservR manages users authentication and access restriction to your apps."
+description: "AppservR manages user authentication and access restriction to your apps."
 lead: "AppservR manages users authentication and access restriction to your apps."
 date: 2020-10-13T15:21:01+02:00
 lastmod: 2020-10-13T15:21:01+02:00
@@ -9,7 +9,7 @@ images: []
 menu:
   docs:
     parent: "recipes"
-weight: 120
+weight: 210
 toc: true
 ---
 
@@ -17,15 +17,19 @@ toc: true
 
 You can create new users via the admin interface, or users can sign up themselves.
 
-Users belong to groups that you can create through the admin interface. By default, the first user signing up belongs to the `admins` group. The `admins` group cannot be renamed nor removed, and admin users cannot remove themselves from this group.
+Users belong to groups that you can create through the admin interface. By default, the first user to sign up belongs to the `admins` group. The `admins` group cannot be renamed nor removed, and admin users cannot remove themselves from this group.
 
-## Manage access restriction
+## Access control
 
-Apps can be configured to allow access only for registered users, or for users belonging to specific groups.
+You can control who is allowed to access each app:
 
-This setting can be found in each application page in the admin interface.
+* Everyone
+* All authenticated users
+* Users belonging to specific groups
 
-## Access authentication info from your app
+This setting can be found in each app page in the admin interface.
+
+## Get authenticated user from your app
 
 You R app can be aware of the authentication infos for the current user, if any. This information is accessible in the HTTP headers sent to your app by the AppservR proxy.
 
@@ -33,7 +37,7 @@ The default app (*Old Faithful Geyser Data*) demonstrates how to use this inform
 
 From Shiny, username and displayed name can be accessed from your server function as follows:
 
-``` R
+``` r
 server <- function(input, output, session) {
 
     output$username <- renderText({

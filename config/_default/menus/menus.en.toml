@@ -1,5 +1,5 @@
 [[docs]]
-  name = "Introduction"
+  name = "Getting Started"
   weight = 10
   identifier = "introduction"
   url = "/docs/introduction/"

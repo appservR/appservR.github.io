@@ -9,24 +9,28 @@ images: []
 menu:
   docs:
     parent: "help"
-weight: 110
+weight: 310
 toc: true
 ---
 
-{{< alert icon="💡" text="Learn more about <a href=\"https://docs.npmjs.com/about-semantic-versioning\">semantic versioning</a> and <a href=\"https://docs.npmjs.com/cli/v6/using-npm/semver#advanced-range-syntax\">advanced range syntax</a>." />}}
+## Why this project?
 
-## Check for outdated packages
+There are already some alternatives to deploy R Shiny apps:
 
-The [`npm outdated`](https://docs.npmjs.com/cli/v7/commands/npm-outdated) command will check the registry to see if any (or, specific) installed packages are currently outdated:
+* [shinyapps.io](https://shinyapps.io)
+* [Shiny server](https://www.rstudio.com/products/shiny/shiny-server/)
+* [ShinyProxy](https://www.shinyproxy.io/)
 
-```bash
-npm outdated [[<@scope>/]<pkg> ...]
-```
+and maybe some others.
 
-## Update packages
+However, working in an organization where data is not the primary focus and with limited IT admin resources (100% Windows!), I found no easy way to share Shiny apps internally as proof of concept.
 
-The [`npm update`](https://docs.npmjs.com/cli/v7/commands/npm-update) command will update all the packages listed to the latest version (specified by the tag config), respecting semver:
+AppservR is intended as a solution for simple deployment with limited admin resources, without conceding performance.
 
-```bash
-npm update [<pkg>...]
-```
+Also it was a fun project to start with the Go programming language during COVID-19 lockdowns weekends.
+
+## About this website
+
+This documentation website was built using [Doks](https://getdoks.org/docs/prologue/introduction/), an amazing theme for [Hugo](https://gohugo.io/). 
+
+You can contribute if you think that some content is missing clarity etc. on this [GitHub repository](https://github.com/appservR/appservR.github.io/issues).

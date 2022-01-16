@@ -9,7 +9,7 @@ images: []
 menu:
   docs:
     parent: "recipes"
-weight: 130
+weight: 220
 toc: true
 ---
 
@@ -21,23 +21,23 @@ The `appservr service` command allows installing and managing the AppservR servi
 
 ### Install
 
-`appservr service install` sub-command will install appservr as a service (still running the executable at its current location).
+`appservr service install` sub-command installs AppservR as a service (running the executable file at its current location).
 
-On Windows, we recommand that you modify the service in the services configuration panel afterwards in order to have it ran by a non-admin account. Otherwise, you allow AppservR admin to run arbitrary scripts as admin, which is a security threat (AppservR uses your system installation of R and is not isolated from your system).
+On Windows, only admins can install services, and services run with administrative privileges by default. We recommend that you change this, using the services configuration panel after install, in order to have it ran by a non-admin account. Otherwise, you allow AppservR admin to run arbitrary scripts as admin, which is a security threat (AppservR uses your system installation of R and is not isolated from your system).
 
 ### Start
 
-`appservr service start` will start the service.
+`appservr service start` starts the service.
 
 ### Stop
 
-`appservr service stop` will stop the service.
+`appservr service stop` stops the service.
 
 ### Uninstall
 
-`appservr service remove` will uninstall the service if it is already stopped, or right after it is stopped.
+`appservr service remove` uninstalls the service if it is already stopped, or schedule removal right after it is stopped.
 
-## Run without admin on Windows
+## Run without admin rights on Windows
 
-Without admin privilege you cannot install AppservR as a service on Windows. However, you can still run it as a scheduled task to run on startup or at session start, which should be a decent alternative.
+Without admin privilege you cannot install AppservR as a service on Windows. However, you can still run it as a scheduled task to run on startup or at session start, which should be a decent alternative in most cases.
 
