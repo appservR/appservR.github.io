@@ -40,4 +40,3 @@ On Windows, only admins can install services, and services run with administrati
 ## Run without admin rights on Windows
 
 Without admin privilege you cannot install AppservR as a service on Windows. However, you can still run it as a scheduled task to run on startup or at session start, which should be a decent alternative in most cases.
-

@@ -31,6 +31,6 @@ Also it was a fun project to start with the Go programming language during COVID
 
 ## About this website
 
-This documentation website was built using [Doks](https://getdoks.org/docs/prologue/introduction/), an amazing theme for [Hugo](https://gohugo.io/). 
+This documentation website was built using [Doks](https://getdoks.org/docs/prologue/introduction/), an amazing theme for [Hugo](https://gohugo.io/).
 
 You can contribute if you think that some content is missing clarity etc. on this [GitHub repository](https://github.com/appservR/appservR.github.io/issues).

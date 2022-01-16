@@ -59,11 +59,11 @@ In particular, AppservR will look for the *Rscript* executable at the default in
 
 ### Web interface
 
-Go to [http://localhost:8080/admin](http://localhost:8080/admin) to access the admin interface. 
+Go to [http://localhost:8080/admin](http://localhost:8080/admin) to access the admin interface.
 
 You will first need to register as a user via the login > signup form. The first user to sign up is registered as an admin user.
 
-After you have created your admin account and successfully logged in, you can configure existing or new Shiny apps at [http://localhost:8080/admin/apps](http://localhost:8080/admin/apps). Several apps can live on the same server and be accessed using the path you configure. 
+After you have created your admin account and successfully logged in, you can configure existing or new Shiny apps at [http://localhost:8080/admin/apps](http://localhost:8080/admin/apps). Several apps can live on the same server and be accessed using the path you configure.
 
 On each app configuration page you can see also the console output of the R session used to run your app, which can be useful to troubleshoot issues.
 

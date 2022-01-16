@@ -17,7 +17,7 @@ toc: true
 
 All buit-in pages, such as signup, login, error pages, are embeded in AppservR executable. However, they can be changed easily if you want to translate them to your language, add your company's logo, etc.
 
-You just need to create a `templates` directory at the same location as the executable file. AppservR will look for existing files in this directory before falling back to the default templates. 
+You just need to create a `templates` directory at the same location as the executable file. AppservR will look for existing files in this directory before falling back to the default templates.
 
 Please check out [this folder on Github](https://github.com/appservR/appservR/tree/main/templates) and download the templates files that you want to modify in your local `templates` folder (keeping the exact same subdirectories and filenames). The template engine is [Go's default template package](https://pkg.go.dev/text/template). Please check out their doc to learn about the syntax. However, you would likely just need to modify the html.
 
